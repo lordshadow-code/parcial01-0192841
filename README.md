@@ -108,3 +108,43 @@ Construya un programa que:
 Entregue los dos archivos `.java`, debidamente nombrados y capaces de compilar y ejecutarse sin errores.
 
 **Analice primero y programe después. Java ejecuta exactamente lo escrito, incluso cuando la idea iba por otro camino.**
+EJERCICIO 1
+Entradas: 
+-10 números enteros positivos o cero que representan los paquetes procesados en cada hora consecutiva
+-Arreglo unidimensional / Vector de 10 posiciones
+
+Procesos:
+-Validación: Bucle `do-while` para rechazar cantidades negativas.
+-Suma TotalAcumulación secuencial de los 10 valores del arreglo.
+-Cálculo del Promedio: División flotante `(double) Total / 10`.
+-Hora Pico (Máximo): Identificación del mayor valor en el arreglo y la hora en que ocurrió 
+-Hora Valle (Mínimo): Identificación del menor valor en el arreglo y la hora en que ocurrió 
+
+Salida:
+-Lista detallada del número de paquetes procesados hora por hora (Hora 1 a Hora 10).
+-Total acumulado: Suma total de paquetes de toda la jornada.
+-Hora Pico: Número de la hora con mayor cantidad procesada y su total.
+-Hora Valle: Número de la hora con menor cantidad procesada y su total.
+
+
+
+
+EJERCICIO 2
+Entradas:
+-20 números enteros positivos o cero que representan las unidades vendidas.
+-Matriz bidimensional de (`int[4][5]`).
+
+Proceso:
+-Bucle `do-while` para asegurar que ningún valor ingresado sea negativo.
+-Acumulación de los elementos de cada fila $i \in [0, 3]$.
+-Acumulación de los elementos de cada columna $j \in [0, 4]$.
+-Recorrido lineal sobre el total de sucursales usando comparación estricta (`<`).
+-Recorrido lineal sobre el total de productos usando comparación estricta (`>`).
+-Contador incremental de celdas donde $V_{i,j} > 30$.
+
+Salidas:
+-Vista tabular de $4 \times 5$ con totales por fila al margen derecho y totales por columna en el pie.
+-Total vendido por cada una de las 4 sucursales y por cada uno de los 5 productos.
+-Nombre/Número de la sucursal con menor volumen total y su cantidad.
+-Nombre/Número del producto con mayor volumen total y su cantidad.
+-Cantidad exacta de celdas de la matriz que superaron las 30 unidades.

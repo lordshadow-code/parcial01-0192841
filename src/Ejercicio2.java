@@ -31,6 +31,22 @@ public class Ejercicio2{
             }
         }
 
+        // Mostrar tabla de ventas
+        System.out.println("\n=== TABLA DE VENTAS ===");
+        System.out.print("Sucursal\\Producto  ");
+        for (int j = 0; j < columnas; j++) {
+            System.out.printf( "| %-10s ", "Prod " + (j + 1));
+        }
+        System.out.println("|");
+
+        for (int i = 0; i < filas; i++) {
+            System.out.printf("Sucursal %-2d      ", (i + 1));
+            for (int j = 0; j < columnas; j++) {
+                System.out.printf("| %-10d ", ventas[i][j]);
+            }
+            System.out.println("|");
+        }
+
         //Procesamiento de los datos
         for (int i = 0; i < filas; i++) {
             for (int j = 0; j < columnas; j++) {
@@ -47,7 +63,7 @@ public class Ejercicio2{
             }
         }
 
-        //Determinar sucursal con menor total de ventas (primera en caso de empate)
+        //Determinar sucursal con menor total de ventas 
 
         int minVentas = totalPorSucursal[0];
         int sucursalMenor = 1;
@@ -58,7 +74,7 @@ public class Ejercicio2{
             }
         }
 
-        //Determinar producto con mayor total de ventas (primero en caso de empate)
+        //Determinar producto con mayor total de ventas 
 
         int maxVentas = totalPorProducto[0];
         int productoMayor = 1;
@@ -69,10 +85,9 @@ public class Ejercicio2{
             }
         }
 
-
         //Mostrar Resultados Finales
 
-        System.out.println("=== REPORTES Y ESTADÍSTICAS ===");
+        System.out.println("\n=== REPORTES Y ESTADÍSTICAS ===");
         
         System.out.println("\n1. Total de unidades vendidas por sucursal:");
         for (int i = 0; i < filas; i++) {
